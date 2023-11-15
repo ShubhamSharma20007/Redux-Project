@@ -37,11 +37,11 @@ const Home = () => {
     <div>
     <div className="main-container px-3 py-2 mt-4">
     <h1 className='text-xl font-semibold '>Products Items</h1>
-    <div className="inline-flex card flex-wrap mx-auto w-full justify-start">
+    <div className="inline-flex card flex-wrap w-full md:justify-start justify-center ">
        {
         product.map((item,index)=>{
             return(
-                <div className="card shadow-md border-2 w-44 min-h-[300px]  h-auto  p-2 m-5 relative  " key={index}>
+                <div className="card shadow-md border-2 md:w-44 w-36 min-h-[300px]  h-auto  p-2 m-2 relative  " key={index}>
                     <img src={item.image} className= 'relative mx-auto h-1/2 object-contain  object-center'  alt="" />
                     <div className="card-body m-auto absolute bottom-1  ">
                <span className='text-sm font-semibold  text-center'>
